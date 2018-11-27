@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.Mappers.StoreMapper">
+	<resultMap id="MenuMap" type="com.Beans.MenuBean">
+		<result property="gramaj" column="gramaj" jdbcType="NUMERIC"/>
+	</resultMap>
+	
+	<select id = "getCeva" resultMap="MenuMap" parameterType="java.util.Map">
+		SELECT gramaj from Meniuri
+		where gramaj = 3;
+	</select>
+
+</mapper>
