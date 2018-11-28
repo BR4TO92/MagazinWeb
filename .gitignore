@@ -111,5 +111,6 @@ buildNumber.properties
 
 ### Foldere ###
 Servers/
+*/META-INF/*
 
 # End of https://www.gitignore.io/api/java,maven,eclipse
